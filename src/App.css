@@ -1,0 +1,7 @@
+.app-container {
+    @apply px-4;
+}
+
+.py-section {
+    @apply py-8;
+}
