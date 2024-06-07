@@ -1,17 +1,15 @@
 import React from 'react'
 import "./App.css"
-import { Header } from './components/header/Header'
 import MainLayout from './layout/MainLayout'
-import HomePage from './pages/home/HomePage'
-import { Navigate, Route, Routes } from 'react-router-dom'
-import LoginPage from './pages/login/LoginPage'
-import SignupPage from './pages/signup/SignupPage'
+import {  Route, Routes } from 'react-router-dom'
+
 import PageNotFound from './pages/page-not-found/PageNotFound'
 import { routes } from './routes/routes'
+import { ContextProvider } from './context/ContextProvider'
 
 const App = () => {
   return (
-    <>
+    <ContextProvider>
       <MainLayout>
         <Routes>
           {
@@ -25,7 +23,7 @@ const App = () => {
       </MainLayout>
 
 
-    </>
+    </ContextProvider>
   )
 }
 
