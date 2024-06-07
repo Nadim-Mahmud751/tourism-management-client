@@ -5,3 +5,8 @@
 .py-section {
     @apply py-8;
 }
+
+.nav-link.active {
+
+    @apply text-indigo-500;
+}

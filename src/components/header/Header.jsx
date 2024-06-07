@@ -29,7 +29,7 @@ export const Header = () => {
                     {
                         menuList.map((item) =>
                             <li key={item?.id}>
-                                <NavLink to={item?.path} className="text-sm text-gray-400 hover:text-gray-500">{item?.name}</NavLink>
+                                <NavLink to={item?.path} className="text-sm nav-link text-gray-400 hover:text-gray-500">{item?.name}</NavLink>
                             </li>
                         )
                     }
