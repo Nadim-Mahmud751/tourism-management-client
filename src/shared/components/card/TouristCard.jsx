@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom'
 export const TouristCard = () => {
     return (
         <div className="tourist-card">
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img className="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1523978591478-c753949ff840" alt="Destination Image" />
-                <div className="p-6">
-                    <h2 className="text-2xl font-bold text-gray-800">Title</h2>
-                    <p className="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
-                    <div className="mt-4">
-                        <Link to="#" className="block text-center text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md">View details</Link>
-                    </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400" alt="Tourist Spot" />
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Tourist Spot Name</h2>
+                    <p class="text-gray-700 mb-1">Average Cost: $200</p>
+                    <p class="text-gray-700 mb-1">Total Visitors Per Year: 5000</p>
+                    <p class="text-gray-700 mb-1">Travel Time: 2 hours</p>
+                    <p class="text-gray-700 mb-1">Seasonality: Summer</p>
+                    <Link to="/tourists-spots/415561" class="text-indigo-600 hover:text-indigo-900 font-semibold">View Details</Link>
                 </div>
             </div>
         </div>)

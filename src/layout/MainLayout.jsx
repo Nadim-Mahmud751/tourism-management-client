@@ -6,9 +6,7 @@ import { routes } from '../routes/routes'
 const MainLayout = ({ children }) => {
     const location = useLocation()
     const routePaths = [...routes.map(route => route.path)]
-
-    console.log(routePaths)
-    const is404Page = !routePaths.includes(location.pathname);
+    const is404Page = !routePaths.includes("/" + location.pathname.split("/")[1]);
 
     if (!is404Page) {
         return (
