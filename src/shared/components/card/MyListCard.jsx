@@ -14,7 +14,7 @@ const MyListCard = () => {
                     <p className="text-gray-700 mb-1">Seasonality: Summer</p>
                     <Link to="/tourists-spots/415561" className="text-indigo-600 hover:text-indigo-900 font-semibold">View Details</Link>
                     <div className="flex  mt-2 items-center justify-between gap-x-0 ">
-                        <button className='px-4 py-2 bg-green-500 text-white rounded'>Update</button>
+                        <Link to={"/update/14144"} className='px-4 py-2 bg-green-500 text-white rounded'>Update</Link>
                         <button className='px-4 py-2 bg-red-500 text-white rounded'>Delete</button>
                     </div>
 
